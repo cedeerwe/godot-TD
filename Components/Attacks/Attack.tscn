@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Components/Attacks/Attack.gd" type="Script" id=1]
+
+[node name="Attack" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Target" type="Node" parent="."]
+
+[node name="Effect" type="Node" parent="."]
+
+[node name="Ready" type="Node" parent="."]
+
+[node name="Trigger" type="Node" parent="."]

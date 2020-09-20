@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Levels/1/Level.gd" type="Script" id=1]
+
+[node name="Level" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Creeps" type="Node" parent="."]
+
+[node name="Towers" type="Node" parent="."]
+
+[node name="SpawnTimer" type="Timer" parent="."]
+autostart = true
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_SpawnTimer_timeout"]
